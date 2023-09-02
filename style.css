@@ -11,9 +11,7 @@ lilas: #5f2c82
     margin: 0%;
 }
 body,html{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    
 }
 
 #imagem{
@@ -22,16 +20,24 @@ body,html{
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 10px;
 }
 main{
+    width: 100vw;
+    height: 100vh;
+    background-color:  #5f2c82;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#login{
     background-color: white;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 75vw;
     padding: 20px;
     border-radius: 20px;
+    max-width: 1000px;
+    min-width: 300px;
 }
 h1{
     text-align: center;
@@ -45,11 +51,78 @@ form{
 
 p{
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
      
 }
-
-@media (min-width:720px) {
-    body,html{
-
+#isenha,#iemail,a{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-size: 2em;
+}
+.barra{
+    display: inline;
+    background-color: #49a09d;
+    padding: 10px;
+    border-radius: 7px;
+}
+#botam{
+    padding:0px 100px;
+    font-size: 2em;
+    border-radius: 7px;
+    background-color: blue;
+    margin: 15px 0px 25px 0px;
+}
+a{
+    font-size: 1.5em;
+    display: inline;
+    background-color: #49a09d;
+    text-decoration: none;
+    margin-top: 100px;
+    padding: 10px 50px;
+}
+@media (min-width:768px) {
+    #imagem{
+        background-image: url('imagens/pexels-maria-orlova-4946772.jpg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
     }
+    main{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #login{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+    #formulario{
+        padding-left: 10px;
+        width: 400px;
+    }
+    #formulario p{
+        margin: 10px;
+        display: inline;
+        width: 90%;
+        height: 100%;
+    }
+    #imagem{
+        width: 450px;
+        height: 440px;
+        
+    }
+}
+@media (min-width:992px) {
+    #login{
+        display: flex;
+        padding-left: 10px;
+        flex-direction: row-reverse;
+        max-width: 900px;
+    }
+
 }
