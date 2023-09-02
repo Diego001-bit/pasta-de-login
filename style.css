@@ -17,7 +17,7 @@ lilas: #5f2c82
     background-repeat: no-repeat;
     background-size: cover;
     height:400px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 main{
     width: 100vw;
@@ -31,10 +31,11 @@ main{
 }
 #login{
     background-color: white;
-    padding: 20px 20px 0px 20px;
     border-radius: 20px;
     max-width: 1000px;
     min-width: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
 }
 h1{
     text-align: center;
@@ -47,7 +48,9 @@ form{
 }
 
 p{
+    padding: 10px;
     max-width: 400px;
+    text-indent: 20px;
 }
 #isenha,#iemail{
     margin: 30px;
@@ -87,8 +90,9 @@ a{
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        height: 600px;
         width: 400px;
+        border-radius: 10px 0px 0px 10px;
     }
     p{
         max-width: 600px;
@@ -124,6 +128,7 @@ a{
     }
     #imagem{
         width: 700px;
+        border-radius: 0px 10px 10px 0px;
     }
 
 }
