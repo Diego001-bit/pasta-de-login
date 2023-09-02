@@ -10,10 +10,6 @@ lilas: #5f2c82
     padding: 0%;
     margin: 0%;
 }
-body,html{
-    
-}
-
 #imagem{
     background-image: url('imagens/pexels-maria-orlova-4946772.jpg');
     background-position: right center;
