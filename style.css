@@ -28,6 +28,7 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 #login{
     background-color: white;
@@ -36,6 +37,8 @@ main{
     min-width: 300px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+
+
 }
 h1{
     text-align: center;
@@ -64,10 +67,12 @@ label{
 
 }
 .barra{
-    display: inline;
+    display: block;
     background-color: #49a09d;
-    padding: 22px;
-    border-radius: 7px;
+    margin-bottom: 20px;
+    border-radius:7px;
+    box-shadow: 0px 0px 10px black;
+    
 }
 #botam{
     padding:0px 100px;
@@ -75,6 +80,14 @@ label{
     border-radius: 7px;
     background-color: blue;
     margin: 15px 0px 25px 0px;
+}
+#isenha, #iemail{
+    width: 60%;
+    height: 30px;
+    font-size: 1em;
+}
+label :hover{
+    box-shadow: 0px 0px 10px black;
 }
 a{
     font-size: 1.5em;
@@ -107,6 +120,7 @@ a{
         display: flex;
         flex-direction: row;
         width: 90%;
+        
     }
     #formulario{
         padding-left: 10px;
