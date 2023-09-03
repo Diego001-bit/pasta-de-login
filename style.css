@@ -55,47 +55,57 @@ p{
     max-width: 400px;
     text-indent: 20px;
 }
-#isenha,#iemail{
-    margin: 30px;
-    border-radius: 6px;
-    height: 30px;
-    width: 180px;
-    
-}
-label{
-    font-size: 1em;
 
-}
-.barra{
+
+form>div.barra{
     display: block;
-    background-color: #49a09d;
+    font-size: 1em;
+    text-align: center;
+    background-color: #5f2c82;
     margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
     border-radius:7px;
     box-shadow: 0px 0px 10px black;
-    
+    margin: 10px 0px;
 }
-#botam{
-    padding:0px 100px;
+#iemail,#isenha{
+    margin-top: 14px;
+    font-size: 1.2em;
+}
+label{
+    display: none;
+}
+div.barra > .material-symbols-outlined{
     font-size: 2em;
+}
+form  input[type=submit]{
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    width: 100%;
+    height: 50px;
     border-radius: 7px;
-    background-color: blue;
-    margin: 15px 0px 25px 0px;
-}
-#isenha, #iemail{
-    width: 60%;
-    height: 30px;
-    font-size: 1em;
-}
-label :hover{
-    box-shadow: 0px 0px 10px black;
-}
-a{
-    font-size: 1.5em;
-    display: inline;
+    color: white;
     background-color: #49a09d;
+    cursor: pointer;
+}
+form  input[type=submit]:hover{
+    background-color: #26504e;
+}
+
+a{
+    font-size: 1.4em;
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
     text-decoration: none;
-    margin-top: 100px;
-    padding: 10px 50px;
+    border: 1px solid #49a09d;
+    background-color: white;
+}
+a:hover{
+    background-color: #49a09d65;
 }
 @media (min-width:768px) {
     #imagem{
