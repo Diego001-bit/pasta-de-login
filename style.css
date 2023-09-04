@@ -66,18 +66,36 @@ form>div.barra{
     width: 100%;
     height: 60px;
     border-radius:7px;
-    box-shadow: 0px 0px 10px black;
-    margin: 10px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+
 }
 #iemail,#isenha{
-    margin-top: 14px;
-    font-size: 1.2em;
+    font-size: 1em;
+    height: 94%;
+    border-radius: 7px;
+    background-color: #6ed6d3;
+    padding: 4px;
+    width: calc(100% - 60px);
+    transform: translateY(-16px);
+}
+#isenha:focus-within{
+    background-color: white;
+}
+#iemail:focus-within{
+    background-color: white;
 }
 label{
     display: none;
 }
 div.barra > .material-symbols-outlined{
-    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 3em;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    
 }
 form  input[type=submit]{
     display: block;
@@ -101,6 +119,7 @@ a{
     height: 40px;
     text-align: center;
     text-decoration: none;
+    border-radius: 8px;
     border: 1px solid #49a09d;
     background-color: white;
 }
@@ -154,5 +173,7 @@ a:hover{
         width: 700px;
         border-radius: 0px 10px 10px 0px;
     }
-
+    #iemail,#isenha{
+        padding-top: 4.3px;
+    }
 }
